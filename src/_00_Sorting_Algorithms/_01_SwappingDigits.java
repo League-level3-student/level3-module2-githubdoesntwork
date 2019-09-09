@@ -47,6 +47,7 @@ class _01_SwappingDigits {
 		
 		
 		}
+		}
 	}
 	
 	//3. Complete the method so that it finds the middle number in the array.
