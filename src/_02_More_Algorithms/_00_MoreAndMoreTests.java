@@ -45,33 +45,46 @@ public class _00_MoreAndMoreTests {
 		return bool;
 	}
 
-//	@Test
-//	  public void SquareTest() {
-//
-//	    assertTrue(isSquare(4));
-//	    assertTrue(isSquare(144));
-//	    assertTrue(isSquare(64));
-//	    assertTrue(isSquare(10201));
-//	    assertTrue(isSquare(1));
-//	    assertFalse(isSquare(3));
-//	    assertFalse(isSquare(22));
-//	    assertFalse(isSquare(143));
-//
-//	  }
-//
-//	@Test
-//	  public void CubeTest() {
-//
-//	    assertTrue(isCube(27));
-//	    assertTrue(isCube(216));
-//	    assertTrue(isCube(729));
-//	    assertTrue(isCube(1));
-//	    assertFalse(isCube(3));
-//	    assertFalse(isCube(22));
-//	    assertFalse(isCube(143));
-//
-//	  }
+	@Test
+	  public void SquareTest() {
 
+	    assertTrue(isSquare(4));
+	    assertTrue(isSquare(144));
+	    assertTrue(isSquare(64));
+	    assertTrue(isSquare(10201));
+	    assertTrue(isSquare(1));
+	    assertFalse(isSquare(3));
+	    assertFalse(isSquare(22));
+	    assertFalse(isSquare(143));
+
+	}
+	public boolean isSquare(int x) {
+		double n = Math.sqrt(x);
+		if(n%1==0) {
+			return true;
+		}else
+			return false;
+	}
+
+	@Test
+	  public void CubeTest() {
+
+	    assertTrue(isCube(27));
+	    assertTrue(isCube(216));
+	    assertTrue(isCube(729));
+	    assertTrue(isCube(1));
+	    assertFalse(isCube(3));
+	    assertFalse(isCube(22));
+	    assertFalse(isCube(143));
+
+	  }
+	public boolean isCube(int x) {
+		double n = Math.cbrt(x);
+		if(n%1==0) {
+			return true;
+		}else
+			return false;
+	}
 
 
 }
